@@ -6,6 +6,19 @@
     <title>Effective Annual IR</title>
 </head>
 <body>
-    <h1>Effective Annual IR</h1>   
+    <h1>Effective Annual IR</h1>
+    
+    <form>
+        <label for="compounding_period_per_year">Compounding Period Per Year:</label>
+        <input type="number" id="compounding_period_per_year">
+
+        <label for="stated_interest_rate">Stated Interest Rate:</label>
+        <input type="number" id="stated_interest_rate">
+
+        <button type="button" onclick="calculate_effective_annual_ir()">Submit</button>
+        
+        <p id="interest_rate">Effective Annual IR: <span id=interest_rate_amount></span></p>
+    </form>
+    <script src="index.js"></script>
 </body>
 </html>
